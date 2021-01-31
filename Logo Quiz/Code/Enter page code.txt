@@ -1,0 +1,475 @@
+ int Score = 0;
+        int questionNumber = 0;
+        Random rand = new Random();
+        int qunumber = 1;
+        List<int> questions = new List<int>();
+        public PlayerFace()
+        {
+            InitializeComponent();
+            loadPlayers();
+        }
+        private void hideAllGroupBoxes()
+        {
+            GBoxAuba.Visible = false;
+            GBoxCosta.Visible = false;
+            GBoxCoutinho.Visible = false;
+            GBoxBale.Visible = false;
+            GBoxDembele.Visible = false;
+            GBoxDinho.Visible = false;
+            GBoxELShaarawy.Visible = false;
+            GBoxFirmino.Visible = false;
+            GBoxGriezmann.Visible = false;
+            GBoxHamsik.Visible = false;
+            GBoxIbra.Visible = false;
+            GBoxIsco.Visible = false;
+            GBoxMarchisio.Visible = false;
+            GBoxMessi.Visible = false;
+            GBoxNeymar.Visible = false;
+            GBoxOzil.Visible = false;
+            GBoxPayet.Visible = false;
+            GBoxPogba.Visible = false;
+            GBoxRibery.Visible = false;
+            GBoxVardy.Visible = false;
+            GBoxScore.Visible = false;
+
+        }
+
+        private void loadPlayers()
+        {
+            do
+            {
+                questionNumber = rand.Next(1, 20);
+            }
+            while (questions.Contains(questionNumber));
+            questions.Add(questionNumber);
+
+            switch (questionNumber)
+            {
+                case 1:
+                    hideAllGroupBoxes();
+                    GBoxAuba.Visible = true;
+                    GBoxAuba.Location = new Point(191, 83);
+                    GBoxAuba.Size = new Size(358, 265);
+                    break;
+                case 2:
+                    hideAllGroupBoxes();
+                    GBoxBale.Visible = true;
+                    GBoxBale.Location = new Point(191, 83);
+                    GBoxBale.Size = new Size(358, 265);
+                    break;
+                case 3:
+                    hideAllGroupBoxes();
+                    GBoxCosta.Visible = true;
+                    GBoxCosta.Location = new Point(191, 83);
+                    GBoxCosta.Size = new Size(358, 265);
+                    break;
+                case 4:
+                    hideAllGroupBoxes();
+                    GBoxCoutinho.Visible = true;
+                    GBoxCoutinho.Location = new Point(191, 83);
+                    GBoxCoutinho.Size = new Size(358, 265);
+                    break;
+                case 5:
+                    hideAllGroupBoxes();
+                    GBoxDembele.Visible = true;
+                    GBoxDembele.Location = new Point(191, 83);
+                    GBoxDembele.Size = new Size(358, 265);
+                    break;
+                case 6:
+                    hideAllGroupBoxes();
+                    GBoxDinho.Visible = true;
+                    GBoxDinho.Location = new Point(191, 83);
+                    GBoxDinho.Size = new Size(358, 265);
+                    break;
+                case 7:
+                    hideAllGroupBoxes();
+                    GBoxELShaarawy.Visible = true;
+                    GBoxELShaarawy.Location = new Point(191, 83);
+                    GBoxELShaarawy.Size = new Size(358, 265);
+                    break;
+                case 8:
+                    hideAllGroupBoxes();
+                    GBoxFirmino.Visible = true;
+                    GBoxFirmino.Location = new Point(191, 83);
+                    GBoxFirmino.Size = new Size(358, 265);
+                    break;
+                case 9:
+                    hideAllGroupBoxes();
+                    GBoxGriezmann.Visible = true;
+                    GBoxGriezmann.Location = new Point(191, 83);
+                    GBoxGriezmann.Size = new Size(358, 265);
+                    break;
+                case 10:
+                    hideAllGroupBoxes();
+                    GBoxHamsik.Visible = true;
+                    GBoxHamsik.Location = new Point(191, 83);
+                    GBoxHamsik.Size = new Size(358, 265);
+                    break;
+                case 11:
+                    hideAllGroupBoxes();
+                    GBoxIbra.Visible = true;
+                    GBoxIbra.Location = new Point(191, 83);
+                    GBoxIbra.Size = new Size(358, 265);
+                    break;
+                case 12:
+                    hideAllGroupBoxes();
+                    GBoxIsco.Visible = true;
+                    GBoxIsco.Location = new Point(191, 83);
+                    GBoxIsco.Size = new Size(358, 265);
+                    break;
+                case 13:
+                    hideAllGroupBoxes();
+                    GBoxMarchisio.Visible = true;
+                    GBoxMarchisio.Location = new Point(191, 83);
+                    GBoxMarchisio.Size = new Size(358, 265);
+                    break;
+                case 14:
+                    hideAllGroupBoxes();
+                    GBoxMessi.Visible = true;
+                    GBoxMessi.Location = new Point(191, 83);
+                    GBoxMessi.Size = new Size(358, 265);
+                    break;
+                case 15:
+                    hideAllGroupBoxes();
+                    GBoxNeymar.Visible = true;
+                    GBoxNeymar.Location = new Point(191, 83);
+                    GBoxNeymar.Size = new Size(358, 265);
+                    break;
+                case 16:
+                    hideAllGroupBoxes();
+                    GBoxOzil.Visible = true;
+                    GBoxOzil.Location = new Point(191, 83);
+                    GBoxOzil.Size = new Size(358, 265);
+                    break;
+                case 17:
+                    hideAllGroupBoxes();
+                    GBoxPayet.Visible = true;
+                    GBoxPayet.Location = new Point(191, 83);
+                    GBoxPayet.Size = new Size(358, 265);
+                    break;
+                case 18:
+                    hideAllGroupBoxes();
+                    GBoxPogba.Visible = true;
+                    GBoxPogba.Location = new Point(191, 83);
+                    GBoxPogba.Size = new Size(358, 265);
+                    break;
+                case 19:
+                    hideAllGroupBoxes();
+                    GBoxRibery.Visible = true;
+                    GBoxRibery.Location = new Point(191, 83);
+                    GBoxRibery.Size = new Size(358, 265);
+                    break;
+                case 20:
+                    hideAllGroupBoxes();
+                    GBoxVardy.Visible = true;
+                    GBoxVardy.Location = new Point(191, 83);
+                    GBoxVardy.Size = new Size(358, 265);
+                    break;
+            }
+
+            qunumber++;
+            if (qunumber == 12)
+            {
+                hideAllGroupBoxes();
+                GBoxScore.Visible = true;
+                lblScore.Text = ("You scored " + Score);
+            }
+        }
+
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAnswer_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+
+            switch (questionNumber)
+            {
+                case 1:
+                    if (txtAnswer.Text.Equals("AUBAMEYANG"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 2:
+                    if (txtAnswer.Text.Equals("BALE"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 3:
+                    if (txtAnswer.Text.Equals("COSTA"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 4:
+                    if (txtAnswer.Text.Equals("COUTINHO"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 5:
+                    if (txtAnswer.Text.Equals("DEMBELE"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 6:
+                    if (txtAnswer.Text.Equals("RONALDINHO"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 7:
+                    if (txtAnswer.Text.Equals("EL SHAARAWY"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 8:
+                    if (txtAnswer.Text.Equals("FIRMINO"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 9:
+                    if (txtAnswer.Text.Equals("GRIEZMANN"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 10:
+                    if (txtAnswer.Text.Equals("HAMSIK"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 11:
+                    if (txtAnswer.Text.Equals("IBRAHIMOVIC"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 12:
+                    if (txtAnswer.Text.Equals("ISCO"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 13:
+                    if (txtAnswer.Text.Equals("MARCHISIO"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 14:
+                    if (txtAnswer.Text.Equals("MESSI"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 15:
+                    if (txtAnswer.Text.Equals("NEYMAR"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 16:
+                    if (txtAnswer.Text.Equals("OZIL"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 17:
+                    if (txtAnswer.Text.Equals("PAYET"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 18:
+                    if (txtAnswer.Text.Equals("POGBA"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 19:
+                    if (txtAnswer.Text.Equals("RIBERY"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+                case 20:
+                    if (txtAnswer.Text.Equals("VARDY"))
+                    {
+                        MessageBox.Show("Correct");
+                        Score++;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                    }
+                    loadPlayers();
+                    txtAnswer.Text = string.Empty;
+                    break;
+
+            }
+        }
+
+        private void txtAnswer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEnter.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
+
+        private void btnPlayOn_Click(object sender, EventArgs e)
+        {
+            Level lev = new Level();
+            ActiveForm.Hide();
+            lev.Show();
+        } 
+    }
+}
